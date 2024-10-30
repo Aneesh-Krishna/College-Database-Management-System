@@ -6,6 +6,7 @@ using CollegeDatabaseManagementSystem.Data;
 using CollegeDatabaseManagementSystem.Models;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CollegeDatabaseManagementSystem.Controllers
 {
@@ -21,12 +22,15 @@ namespace CollegeDatabaseManagementSystem.Controllers
             var students = await _context.Students.Include(s => s.Department).ToListAsync();
             return View(students);
         }
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName");
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Student student)
@@ -51,6 +55,8 @@ namespace CollegeDatabaseManagementSystem.Controllers
             return View(student);
         }
 
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if(id == null)
@@ -69,6 +75,8 @@ namespace CollegeDatabaseManagementSystem.Controllers
             return View(student);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Student student)
@@ -98,6 +106,8 @@ namespace CollegeDatabaseManagementSystem.Controllers
             return View(student);
         }
 
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if(id == null)
@@ -113,6 +123,8 @@ namespace CollegeDatabaseManagementSystem.Controllers
             return View(student);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -126,6 +138,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

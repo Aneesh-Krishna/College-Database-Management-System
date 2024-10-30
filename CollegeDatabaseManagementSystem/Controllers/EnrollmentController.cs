@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CollegeDatabaseManagementSystem.Data;
 using CollegeDatabaseManagementSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CollegeDatabaseManagementSystem.Controllers
 {
@@ -28,6 +29,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // GET: Enrollment/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -48,6 +50,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // GET: Enrollment/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var students = _context.Students
@@ -69,8 +72,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
 
 
         // POST: Enrollment/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EnrollmentID,StudentId,CourseId,Semester,Year")] Enrollment enrollment)
@@ -100,6 +102,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // GET: Enrollment/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -130,8 +133,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // POST: Enrollment/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EnrollmentID,StudentId,CourseId,Semester,Year")] Enrollment enrollment)
@@ -179,6 +181,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // GET: Enrollment/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -199,6 +202,7 @@ namespace CollegeDatabaseManagementSystem.Controllers
         }
 
         // POST: Enrollment/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

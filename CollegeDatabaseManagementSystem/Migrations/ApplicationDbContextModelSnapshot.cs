@@ -52,7 +52,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("Attendances");
+                    b.ToTable("Attendances", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Course", b =>
@@ -86,7 +86,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
 
                     b.HasIndex("FacultyId");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Department", b =>
@@ -114,7 +114,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
                     b.HasIndex("DepartmentName")
                         .IsUnique();
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Enrollment", b =>
@@ -148,7 +148,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("Enrollments");
+                    b.ToTable("Enrollments", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Faculty", b =>
@@ -179,7 +179,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Faculties");
+                    b.ToTable("Faculties", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Grade", b =>
@@ -210,7 +210,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("Grades");
+                    b.ToTable("Grades", (string)null);
                 });
 
             modelBuilder.Entity("CollegeDatabaseManagementSystem.Models.Student", b =>
@@ -253,7 +253,7 @@ namespace CollegeDatabaseManagementSystem.Migrations
                     b.HasIndex("EnrollmentNumber")
                         .IsUnique();
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

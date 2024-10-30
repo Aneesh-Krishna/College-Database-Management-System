@@ -2,6 +2,14 @@
     ViewData["Title"] = "College Database Management System";
 }
 
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+
 <div class="jumbotron text-center bg-primary text-white">
     <h1 class="display-4">Welcome to the College Database Management System</h1>
     <p class="lead">Efficiently manage the data of a college.</p>

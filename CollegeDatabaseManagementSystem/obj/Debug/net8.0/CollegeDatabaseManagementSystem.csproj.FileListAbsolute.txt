@@ -261,3 +261,7 @@ C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManag
 C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\obj\Debug\net8.0\CollegeDatabaseManagementSystem.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\aneea\source\repos\CollegeDatabaseManagementSystem\CollegeDatabaseManagementSystem\obj\Debug\net8.0\CollegeDatabaseManagementSystem.sourcelink.json
