@@ -1,0 +1,14 @@
+﻿@model CollegeDatabaseManagementSystem.Models.Student
+
+<h2>Student Details</h2>
+<div>
+    <h4>StudentId: </h4> <p>@Model.StudentId </p>
+    <h4>Name: </h4> <p>@Model.FirstName </p> <p>@Model.LastName</p>
+    <h4>Enrollment Number: </h4><p>@Model.EnrollmentNumber</p>
+    <h4>Department: </h4><p>@Model.Department.DepartmentName</p>
+    <h4>Date Of Birth: </h4><p>@Model.DateOfBirth</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.StudentId" class="btn btn-warning">Edit</a>
+<a asp-action="Delete" asp-route-id="@Model.StudentId" class="btn btn-danger">Delete</a>
+<a asp-action="Index" class="btn btn-primary">Back to List</a>

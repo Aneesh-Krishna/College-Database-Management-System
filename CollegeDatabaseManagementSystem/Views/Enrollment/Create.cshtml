@@ -1,0 +1,64 @@
+﻿@model CollegeDatabaseManagementSystem.Models.Enrollment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Enrollment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StudentId" class="control-label">Student</label>
+                <select asp-for="StudentId" class="form-control" asp-items="@(ViewData["StudentId"] as SelectList)" id="StudentId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseId" class="control-label"></label>
+                <select asp-for="CourseId" class ="form-control" asp-items="@(ViewData["CourseId"] as SelectList)" id="CourseId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Semester" class="control-label"></label>
+                <input asp-for="Semester" class="form-control" />
+                <span asp-validation-for="Semester" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#StudentId').change(function() {
+                var studentId = $(this).val();
+                $.ajax({
+                    url: '@Url.Action("GetCoursesByStudent")',
+                    type: 'GET',
+                    data: { studentId: studentId },
+                    success: function(data) {
+                        $('#CourseId').empty();
+                        $.each(data, function(index, course) {
+                            $('#CourseId').append(new Option(course.text, course.value));
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

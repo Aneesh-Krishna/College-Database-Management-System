@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|c:\\users\\aneea\\source\\repos\\collegedatabasemanagementsystem\\collegedatabasemanagementsystem\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|solutionrelative:collegedatabasemanagementsystem\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|c:\\users\\aneea\\source\\repos\\collegedatabasemanagementsystem\\collegedatabasemanagementsystem\\views\\attendance\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|solutionrelative:collegedatabasemanagementsystem\\views\\attendance\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|c:\\users\\aneea\\source\\repos\\collegedatabasemanagementsystem\\collegedatabasemanagementsystem\\views\\attendance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{976904B7-1582-43EB-BF22-51C8F078430F}|CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem.csproj|solutionrelative:collegedatabasemanagementsystem\\views\\attendance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Index.cshtml",
+              "RelativeDocumentMoniker": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Index.cshtml",
+              "RelativeToolTip": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T11:30:41.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Edit.cshtml",
+              "RelativeToolTip": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T11:28:52.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Create.cshtml",
+              "RelativeDocumentMoniker": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Create.cshtml",
+              "ToolTip": "C:\\Users\\aneea\\source\\repos\\CollegeDatabaseManagementSystem\\CollegeDatabaseManagementSystem\\Views\\Attendance\\Create.cshtml",
+              "RelativeToolTip": "CollegeDatabaseManagementSystem\\Views\\Attendance\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T11:25:07.354Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

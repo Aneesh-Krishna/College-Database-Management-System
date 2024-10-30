@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "College Database Management System";
+}
+
+<div class="jumbotron text-center bg-primary text-white">
+    <h1 class="display-4">Welcome to the College Database Management System</h1>
+    <p class="lead">Efficiently manage the data of a college.</p>
+    <hr class="my-4" />
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <!-- Students Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Students</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        View and manage the list of students, including adding new students, editing details, and deleting their data.
+                    </p>
+                    <a asp-controller="Student" asp-action="Index" class="btn btn-primary">View Students</a>
+                </div>
+            </div>
+        </div>
+        <!-- Enrollments Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Enrollments</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        View and manage the enrollments, including adding new enrollments, editing details, and also deleting them.
+                    </p>
+                    <a asp-controller="Enrollment" asp-action="Index" class="btn btn-primary">View Enrollments</a>
+                </div>
+            </div>
+        </div>
+        <!-- Attendance Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Attendance</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        View and manage the list of attendances, including adding new attendance details, editing details, and also deleting them.
+                    </p>
+                    <a asp-controller="Attendance" asp-action="Index" class="btn btn-primary">View Attendance</a>
+                </div>
+            </div>
+        </div>
+        <!-- Faculties Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Faculties</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Manage the faculties, including registration, updating their information, and deleting their details.                     
+                    </p>
+                    <a asp-controller="Faculty" asp-action="Index" class="btn btn-primary">View Faculties</a>
+                </div>
+            </div>
+        </div>
+        <!-- Department Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Department</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Keep track of the departments, including the Head of the Department, and create & delete departments.                            
+                    </p>
+                    <a asp-controller="Department" asp-action="Index" class="btn btn-primary">View Departments</a>
+                </div>
+            </div>
+        </div>
+        <!-- Courses Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Courses</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Keep track of all the courses, including its department, and also create & delete new courses.
+                    </p>
+                    <a asp-controller="Course" asp-action="Index" class="btn btn-primary">View Courses</a>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Grade Section -->
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3>Grades</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        View and manage the grades, including adding new grades, editing details, and also deleting them.
+                    </p>
+                    <a asp-controller="Grade" asp-action="Index" class="btn btn-primary">View Grades</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
